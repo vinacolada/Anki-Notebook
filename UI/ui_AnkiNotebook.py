@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'AnkiNotebookBqozIt.ui'
+## Form generated from reading UI file 'AnkiNotebookCcbGjd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -59,15 +59,22 @@ class Ui_MainWindow(object):
 
         self.qColVert.addWidget(self.qGroup)
 
+        self.tagGroupBox = QGroupBox(self.centralwidget)
+        self.tagGroupBox.setObjectName(u"tagGroupBox")
+        self.verticalLayout = QVBoxLayout(self.tagGroupBox)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.tagLineEdit = QLineEdit(self.tagGroupBox)
+        self.tagLineEdit.setObjectName(u"tagLineEdit")
+
+        self.verticalLayout.addWidget(self.tagLineEdit)
+
+
+        self.qColVert.addWidget(self.tagGroupBox)
+
         self.numGroup = QGroupBox(self.centralwidget)
         self.numGroup.setObjectName(u"numGroup")
         self.verticalLayout_5 = QVBoxLayout(self.numGroup)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.tagLineEdit = QLineEdit(self.numGroup)
-        self.tagLineEdit.setObjectName(u"tagLineEdit")
-
-        self.verticalLayout_5.addWidget(self.tagLineEdit)
-
         self.numLineEdit = QLineEdit(self.numGroup)
         self.numLineEdit.setObjectName(u"numLineEdit")
 
@@ -105,6 +112,18 @@ class Ui_MainWindow(object):
 
         self.tColVert.addWidget(self.textGroup)
 
+        self.topicGroup = QGroupBox(self.centralwidget)
+        self.topicGroup.setObjectName(u"topicGroup")
+        self.verticalLayout_2 = QVBoxLayout(self.topicGroup)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.lineEdit = QLineEdit(self.topicGroup)
+        self.lineEdit.setObjectName(u"lineEdit")
+
+        self.verticalLayout_2.addWidget(self.lineEdit)
+
+
+        self.tColVert.addWidget(self.topicGroup)
+
         self.tColVert.setStretch(0, 1)
         self.tColVert.setStretch(1, 5)
 
@@ -112,17 +131,17 @@ class Ui_MainWindow(object):
 
         self.nColVert = QVBoxLayout()
         self.nColVert.setObjectName(u"nColVert")
-        self.notesGroup = QGroupBox(self.centralwidget)
-        self.notesGroup.setObjectName(u"notesGroup")
-        self.horizontalLayout = QHBoxLayout(self.notesGroup)
+        self.pagesGroup = QGroupBox(self.centralwidget)
+        self.pagesGroup.setObjectName(u"pagesGroup")
+        self.horizontalLayout = QHBoxLayout(self.pagesGroup)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.notesListWidget = QListWidget(self.notesGroup)
-        self.notesListWidget.setObjectName(u"notesListWidget")
+        self.pagesListWidget = QListWidget(self.pagesGroup)
+        self.pagesListWidget.setObjectName(u"pagesListWidget")
 
-        self.horizontalLayout.addWidget(self.notesListWidget)
+        self.horizontalLayout.addWidget(self.pagesListWidget)
 
 
-        self.nColVert.addWidget(self.notesGroup)
+        self.nColVert.addWidget(self.pagesGroup)
 
 
         self.mainHorizontal.addLayout(self.nColVert)
@@ -161,10 +180,12 @@ class Ui_MainWindow(object):
         self.actionLoad.setText(QCoreApplication.translate("MainWindow", u"Load", None))
         self.actionExport_as_txt.setText(QCoreApplication.translate("MainWindow", u"Export as .txt", None))
         self.qGroup.setTitle(QCoreApplication.translate("MainWindow", u"Questions", None))
-        self.numGroup.setTitle(QCoreApplication.translate("MainWindow", u"Tag and Number", None))
+        self.tagGroupBox.setTitle(QCoreApplication.translate("MainWindow", u"Tag", None))
+        self.numGroup.setTitle(QCoreApplication.translate("MainWindow", u"Number", None))
         self.titleGroup.setTitle(QCoreApplication.translate("MainWindow", u"Title", None))
         self.textGroup.setTitle(QCoreApplication.translate("MainWindow", u"Text", None))
-        self.notesGroup.setTitle(QCoreApplication.translate("MainWindow", u"Notes", None))
+        self.topicGroup.setTitle(QCoreApplication.translate("MainWindow", u"Topic", None))
+        self.pagesGroup.setTitle(QCoreApplication.translate("MainWindow", u"Pages", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
     # retranslateUi
 
